@@ -1,95 +1,209 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
     <link
-    href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700;900&display=swap"
-    rel="stylesheet">
-<link rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
-<link rel="stylesheet" href="./index.css">
-</head>
-<body>
-    <header>
-        <header class="header">
-            <div class="header__container container">
-                <nav class="header__nav">
-                    <a class="logo logo_place_header" href="./index.html"><span class="logo_accent">Web</span>studio</a>
-                    <ul class="header__nav-links">
-                        <li class="header__nav-item"><a class="header__nav-link" href="./index.html">Studio</a></li>
-                        <li class="header__nav-item"><a class="header__nav-link" href="./portfolio.html">Portfolio</a></li>
-                        <li class="header__nav-item"><a class="header__nav-link" href="">Contacts</a></li>
-                    </ul>
-                </nav>
-                <address class="header__address">
-                    <ul class="header__address-links">
-                        <li><a class="header__address-link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-                        <li><a class="header__address-link" href="tel:+11 (000) 111-11-11">+11 (000) 111-11-11</a></li>
-                    </ul>
-                </address>
-            </div>
-        </header>
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    />
+
+    <link rel="stylesheet" href="./portfolio.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__container container">
+        <nav class="header__nav">
+          <a class="logo logo_place_header" href="./index.html"
+            ><span class="logo_accent">Web</span>studio</a
+          >
+          <ul class="header__nav-links">
+            <li class="header__nav-item">
+              <a class="header__nav-link" href="./index.html">Studio</a>
+            </li>
+            <li class="header__nav-item">
+              <a class="header__nav-link" href="./portfolio.html">Portfolio</a>
+            </li>
+            <li class="header__nav-item">
+              <a class="header__nav-link" href="">Contacts</a>
+            </li>
+          </ul>
+        </nav>
+        <address class="header__address">
+          <ul class="header__address-links">
+            <li>
+              <a class="header__address-link" href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
+            </li>
+            <li>
+              <a class="header__address-link" href="tel:+11 (000) 111-11-11"
+                >+11 (000) 111-11-11</a
+              >
+            </li>
+          </ul>
+        </address>
+      </div>
     </header>
 
     <main>
-        <section>
-            <h1>Portfolio</h1>
-            набор радиокнопок - выбрать один из многих
-            <button type="button">hdskfhdk</button>
+      <section class="portfolio">
+        <div class="portfolio__container container">
+          <h1 class="hidden-title">Portfolio</h1>
+          <ul class="filter">
+            <li class="filter__item">
+              <button class="filter__button">All</button>
+            </li>
+            <li class="filter__item">
+              <button class="filter__button">Web Site</button>
+            </li>
+            <li class="filter__item">
+              <button class="filter__button">App</button>
+            </li>
+            <li class="filter__item">
+              <button class="filter__button">Design</button>
+            </li>
+            <li class="filter__item">
+              <button class="filter__button">Marketing</button>
+            </li>
+          </ul>
 
-            <ul>
-                <li>
-                    <img src="" alt="">
-                    <h2></h2>
-                    <p></p>
-                </li>
-                <li>
-                    <img src="" alt="">
-                    <h2></h2>
-                    <p></p>
-                </li>
-                <li>
-                    <img src="" alt="">
-                    <h2></h2>
-                    <p></p>
-                </li>
-                <li>
-                    <img src="" alt="">
-                    <h2></h2>
-                    <p></p>
-                </li>
-                <li>
-                    <img src="" alt="">
-                    <h2></h2>
-                    <p></p>
-                </li>
-                <li>
-                    <img src="" alt="">
-                    <h2></h2>
-                    <p></p>
-                </li>
-                <li>
-                    <img src="" alt="">
-                    <h2></h2>
-                    <p></p>
-                </li>
-                <li>
-                    <img src="" alt="">
-                    <h2></h2>
-                    <p></p>
-                </li>
-                <li>
-                    <img src="" alt="">
-                    <h2></h2>
-                    <p></p>
-                </li>
-            </ul>
-        </section>
+          <ul class="cards">
+            <li class="cards__item">
+              <a href="" class="cards__cover">
+              <img class="cards__img" src="./images/img.jpg" alt="" />
+              <div class="cards__description">
+                <h2 class="cards__heading">Banking App Interface Concept</h2>
+                <p class="cards__text">App</p>
+              </div>
+              </a>
+            </li>
+            <li class="cards__item">
+              <a href="" class="cards__cover">
+              <img class="cards__img" src="./images/img (1).jpg" alt="" />
+              <div class="cards__description">
+                <h2 class="cards__heading">Cashless Payment</h2>
+                <p class="cards__text">Marketing</p>
+              </div>
+              </a>
+            </li>
+            <li class="cards__item">
+              <a href="" class="cards__cover">
+              <img class="cards__img" src="./images/img (2).jpg" alt="" />
+              <div class="cards__description">
+                <h2 class="cards__heading">Meditation App</h2>
+                <p class="cards__text">App</p>
+              </div>
+              </a>
+            </li>
+            <li class="cards__item">
+              <a href="" class="cards__cover">
+                <img class="cards__img" src="./images/img (3).jpg" alt="" />
+              <div class="cards__description">
+                <h2 class="cards__heading">Taxi Service</h2>
+                <p class="cards__text">Marketing</p>
+              </div>
+              </a>
+            </li>
+            <li class="cards__item">
+                <a href="" class="cards__cover">
+              <img class="cards__img" src="./images/img9.jpg" alt="" />
+              <div class="cards__description">
+                <h2 class="cards__heading">Screen Illustrations</h2>
+                <p class="cards__text">Design</p>
+              </div>
+            </a>
+            </li>
+            <li class="cards__item">
+                <a href="" class="cards__cover">
+              <img class="cards__img" src="./images/img (4).jpg" alt="" />
+              <div class="cards__description">
+                <h2 class="cards__heading">Online Courses</h2>
+                <p class="cards__text">Marketing</p>
+              </div>
+            </a>
+            </li>
+            <li class="cards__item">
+                <a href="" class="cards__cover">
+              <img class="cards__img" src="./images/img (5).jpg" alt="" />
+              <div class="cards__description">
+                <h2 class="cards__heading">Instagram Stories Concept</h2>
+                <p class="cards__text">Design</p>
+              </div>
+            </a>
+            </li>
+            <li class="cards__item">
+                <a href="" class="cards__cover">
+              <img class="cards__img" src="./images/img (6).jpg" alt="" />
+              <div class="cards__description">
+                <h2 class="cards__heading">Organic Food</h2>
+                <p class="cards__text">Web Site</p>
+              </div>
+            </a>
+            </li>
+            <li class="cards__item">
+                <a href="" class="cards__cover">
+              <img class="cards__img" src="./images/img (7).jpg" alt="" />
+              <div class="cards__description">
+                <h2 class="cards__heading">Fresh Coffee</h2>
+                <p class="cards__text">Web Site</p>
+              </div>
+            </a>
+            </li>
+          </ul>
+        </div>
+      </section>
     </main>
 
-    <footer></footer>
-</body>
+    <footer class="footer">
+      <div class="footer__container container">
+        <div class="footer__wrap">
+          <a class="logo logo_place_footer" href=""
+            ><span class="logo_accent">Web</span>studio</a
+          >
+          <p class="footer__text">
+            Increase the flow of customers and sales for your business with
+            digital marketing & growth solutions.
+          </p>
+        </div>
+        <div class="footer__social">
+          <h3 class="footer__heading">Social media</h3>
+          <nav>
+            <ul class="footer__social-list">
+              <li class="footer__social-item">
+                <a
+                  class="footer__social-link footer__social-link_inst"
+                  href=""
+                ></a>
+              </li>
+              <li class="footer__social-item">
+                <a
+                  class="footer__social-link footer__social-link_twitter"
+                  href=""
+                ></a>
+              </li>
+              <li class="footer__social-item">
+                <a
+                  class="footer__social-link footer__social-link_facebook"
+                  href=""
+                ></a>
+              </li>
+              <li class="footer__social-item">
+                <a
+                  class="footer__social-link footer__social-link_linkedin"
+                  href=""
+                ></a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>

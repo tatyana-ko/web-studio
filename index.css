@@ -13,6 +13,10 @@ body {
   padding: 0 15px;
 }
 
+.hidden-title {
+  font-size: 0;
+}
+
 .logo {
   text-decoration: none;
   text-transform: uppercase;
