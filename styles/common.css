@@ -1,0 +1,237 @@
+:root {
+  --dark-color: #2E2F42;
+  --text-color: #434445;
+  --subtle-text-color: #8E8F99;
+  --primary-brand-color: #4D5AE5;
+  --pressed-state-color: #404BBF;
+  --success-color: #31D0AA;
+  --accent-color: #E7E9FC;
+  --light-color: #F4F4FD;
+  --white-bcg-color: #FFFFFF;
+  --modal-bcg-color: #FCFCFC;
+}
+
+body {
+  font-family: Roboto, Arial, Helvetica, sans-serif;
+}
+
+.container {
+  width: 1152px;
+  padding-left: 12px;
+  padding-right: 12px;
+  margin-left: auto;
+  margin-right: auto;
+  outline: 1px solid tomato;
+}
+
+.hidden-title {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+/* LOGO */
+
+.logo {
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+}
+
+.logo_span {
+  color: var(--primary-brand-color);
+}
+
+.logo_header {
+  color: var(--dark-color);
+}
+
+.logo_footer {
+  color: var(--white-bcg-color);
+}
+
+/* HEADER */
+
+.header {
+  background-color: var(--white-bcg-color);
+}
+
+.header__container {
+  display: flex;
+  align-items: center;
+}
+
+.header__nav-list {
+  display: flex;
+  gap: 40px;
+  padding: 0;
+  margin: 0 0 0 76px;
+  list-style: none;
+}
+
+.header__nav-link {
+  display: inline-block;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  color: var(--dark-color);
+  text-decoration: none;
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.header__nav-link:hover, .header__nav-link:focus {
+  color: var(--pressed-state-color);
+}
+
+.header__address {
+  display: inline-flex;
+  gap: 40px;
+  margin-left: auto;
+}
+
+.header__address-link {
+  font-style: normal;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+.header__address-link:hover, .header__address-link:focus {
+  color: var(--pressed-state-color);
+}
+
+/* FOOTER */
+
+.footer {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background-color: var(--dark-color);
+}
+
+.footer__container {
+  display: flex;
+}
+
+.footer__info {
+  width: 264px;
+  margin-right: 120px;
+}
+
+.footer__text {
+  margin-top: 16px;
+  margin-bottom: 0;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--light-color);
+}
+
+/* SOCIALS */
+
+.socials {
+  margin-right: 80px;
+}
+
+.socials__text {
+  margin-top: 0;
+  margin-bottom: 16px;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--white-bcg-color);
+}
+
+.socials__list {
+  display: flex;
+  gap: 16px;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.socials__link {
+  display: block;
+  padding: 8px;
+  border-radius: 50%;
+  background-color: var(--primary-brand-color);
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.socials__link:hover {
+  background-color: var(--success-color);
+}
+
+.socials__icon {
+  display: block;
+  width: 24px;
+  height: 24px;
+}
+
+/* SUBSCRIPTION */
+
+.subscription {
+
+}
+
+.subscription__text {
+  margin-top: 0;
+  margin-bottom: 16px;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--white-bcg-color);
+}
+
+.subscription__input {
+  width: 264px;
+  padding: 8px 16px;
+  border: 1px solid var(--light-color);
+  border-radius: 4px;
+  color: var(--white-bcg-color);
+  background-color: transparent;
+}
+
+.subscription__input::placeholder {
+  font-size: 12px;
+  line-height: 2;
+  letter-spacing: 0.02em;
+  color: var(--white-bcg-color);
+}
+
+.subscription__btn {
+  display: inline-flex;
+  padding: 8px 24px;
+  margin-left: 24px;
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--white-bcg-color);
+  background-color: var(--primary-brand-color);
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.subscription__btn:hover {
+  background-color: var(--pressed-state-color);
+}
+
+.subscription__icon {
+  margin-left: 16px;
+  width: 24px;
+  height: 24px;
+}
