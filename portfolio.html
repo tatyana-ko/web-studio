@@ -168,30 +168,15 @@
     </div>
   </footer>
 
-  <script>
-    const cards = document.querySelectorAll('.card');
-    const filters = document.querySelectorAll('.filters__input');
+  <div class="side-scroll">
+    <svg class="side-scroll-arrow">
+      <use href="./images/sprite.svg#icon-arrow-up"/>
+    </svg>
+  </div>
 
-    filters.forEach(filter => {
-      filter.addEventListener('click', () => {
-        const currentCategory = filter.dataset.filter;
-        filterCards(currentCategory, cards);
-      })
-    })
+  <script type="module" src="./pages/portfolio.js"></script>
+  <script type="module" src="./pages/common.js"></script>
 
-    function filterCards(category, items) {
-      items.forEach((item) => {
-        const isItemFiltered = !item.classList.contains(category);
-        const isShowAll = category.toLowerCase() === 'all';
-
-        if (isItemFiltered && !isShowAll) {
-          item.classList.add('hide-card')
-        } else {
-          item.classList.remove('hide-card')
-        }
-      })
-    }
-  </script>
 </body>
 
 </html>

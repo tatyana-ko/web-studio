@@ -35,6 +35,29 @@ body {
   overflow: hidden;
 }
 
+/* SIDE SCROLL */
+
+.side-scroll {
+  position: fixed;
+  top: 0;
+  right: 0;
+  display: block;
+  width: 60px;
+  height: 100vh;
+  background-color: rgba(46, 47, 66, 0.1);
+  cursor: pointer;
+}
+
+.side-scroll-arrow {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 32px;
+  height: 32px;
+  fill: rgba(46, 47, 66, 0.2);
+}
+
 /* LOGO */
 
 .logo {
