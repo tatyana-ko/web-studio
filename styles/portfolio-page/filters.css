@@ -1,0 +1,60 @@
+.hide-card {
+  display: none;
+}
+
+.filters {
+  display: flex;
+  gap: 24px;
+  margin-top: 100px;
+  margin-bottom: 72px;
+  border: none;
+
+  @media screen and (min-width: 428px) {
+    flex-wrap: wrap;
+    justify-content: left;
+    margin-top: 48px;
+    margin-bottom: 48px;
+  }
+
+  @media screen and (min-width: 768px) {
+    flex-wrap: nowrap;
+    justify-content: center;
+  }
+}
+
+.filters__label {
+  border: 1px solid var(--accent-color);
+  border-radius: 4px;
+  background-color: var(--light-color);
+  cursor: pointer;
+
+  @media screen and (min-width: 428px) {
+    padding: 8px 16px;
+  }
+
+  @media screen and (min-width: 768px) {
+    padding: 12px 24px;
+  }
+}
+
+.filters__input {
+  appearance: none;
+}
+
+.filters__span {
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 500;
+  color: var(--primary-brand-color);
+}
+
+.filters__label:focus-within {
+  background-color: var(--pressed-state-color);
+  border: 1px solid var(--pressed-state-color);
+  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 
+   0px 2px 1px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.1);
+}
+
+.filters__label:focus-within > .filters__span {
+  color: var(--white-bcg-color);
+}

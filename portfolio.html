@@ -14,24 +14,35 @@
 <body>
   <header class="header">
     <div class="container header__container">
-      <a href="" class="logo logo_header"><span class="logo_span">WEB</span>STUDIO</a>
-      <nav class="header__nav">
-        <ul class="header__nav-list">
-          <li>
-            <a href="./index.html" class="header__nav-link">Studio</a>
-          </li>
-          <li>
-            <a href="" class="header__nav-link">Portfolio</a>
-          </li>
-          <li>
-            <a href="" class="header__nav-link">Contacts</a>
-          </li>
-        </ul>
-      </nav>
-      <address class="header__address">
-        <a href="mailto:info@devstudio.com" class="header__address-link">info@devstudio.com</a>
-        <a href="tel:+110001111111" class="header__address-link">+11 (000) 111-11-11</a>
-      </address>
+      <a href="./index.html" class="logo logo_header"><span class="logo_span">WEB</span>STUDIO</a>
+
+      <button class="header__sidebar-open-btn" type="button" aria-controls="main-nav" aria-expanded="false" aria-label="mobile menu switch">
+        <svg class="header__sidebar-icons">
+          <use class="sidebar-open-icon" href="./images/sprite.svg#icon-open-btn"/>
+          <use class="sidebar-close-icon" href="./images/sprite.svg#icon-close-btn"/>
+        </svg>
+      </button>
+
+      <div class="header__nav-wrapper" id="main-nav">
+        <nav class="header__nav">
+          <ul class="header__nav-list">
+            <li>
+              <a href="./index.html" class="header__nav-link">Studio</a>
+            </li>
+            <li>
+              <a href="./portfolio.html" class="header__nav-link">Portfolio</a>
+            </li>
+            <li>
+              <a href="" class="header__nav-link">Contacts</a>
+            </li>
+          </ul>
+        </nav>
+
+        <address class="header__address">
+          <a href="mailto:info@devstudio.com" class="header__address-link header__address-link_mail">info@devstudio.com</a>
+          <a href="tel:+110001111111" class="header__address-link header__address-link_phone">+11 (000) 111-11-11</a>
+        </address>
+      </div>
     </div>
   </header>
 
@@ -166,16 +177,14 @@
         </form>
       </div>
     </div>
+
+    <svg width="32" height="32" class="side-scroll-arrow">
+      <use href="./images/sprite.svg#icon-arrow-up" />
+    </svg> 
   </footer>
 
-  <div class="side-scroll">
-    <svg class="side-scroll-arrow">
-      <use href="./images/sprite.svg#icon-arrow-up"/>
-    </svg>
-  </div>
-
-  <script type="module" src="./pages/portfolio.js"></script>
-  <script type="module" src="./pages/common.js"></script>
+<script type="module" src="./pages/portfolio.js"></script>
+<script type="module" src="./pages/scroll-to-top.js"></script>
 
 </body>
 

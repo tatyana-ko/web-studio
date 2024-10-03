@@ -1,4 +1,4 @@
-const scroll = document.querySelector(".side-scroll");
+const scroll = document.querySelector(".side-scroll-arrow");
 
 scroll.addEventListener("click", (e) => {
   e.preventDefault();
